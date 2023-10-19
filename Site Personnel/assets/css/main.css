@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: url('./../images/background.jpg') no-repeat;
+    background: url('./../images/background.png') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -74,4 +74,20 @@ nav ul {
   h1{
     text-align: center;
     color: whitesmoke;
+  }
+
+  h3{
+    text-align: right;
+    padding: 40px;
+    color: white;
+  }
+
+  image{
+    padding: 40px;
+    margin-left: auto;
+  }
+
+  div{
+    display: flex;
+    align-items: center;
   }

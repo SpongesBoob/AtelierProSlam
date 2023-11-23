@@ -29,11 +29,13 @@
     <section id="accueil">
       <h1>Accueil</h1>
        <div>
-        <image src="./assets/images/PhotoMoi.png" ></image>
-        <h3> Mon Nom est Bob Le Bricoleur <br>
-        J'ai 59 ans <br>
-        Mon site est cool car il est propose des tutos brico
-        </h3>
+        <?php
+        $data=my_yaml_parse_file('./assets/yaml/accueil.yaml');
+        foreach($data as $Accueil){
+            echo "<h3>".$Accueil['name']."</h3>";
+            echo "<h3>".$Accueil['']."</h3>";
+        }
+        ?>
        </div>
     </section>
     

@@ -30,24 +30,37 @@
       <h1>Accueil</h1>
        <div>
         <?php
-        $data=my_yaml_parse_file('./assets/yaml/accueil.yaml');
-        foreach($data as $Accueil){
-            echo "<h3>".$Accueil['name']."</h3>";
-            echo "<h3>".$Accueil['']."</h3>";
-        }
+        require_once("yaml/yaml.php");
+        $data = yaml_parse_file('./assets/yaml/accueil.yaml');
+
+        echo '<div style="display: flex; align-items: center;">';
+        echo '<div style="flex: 1;"><img src="./assets/images/' . $data['Image'] . '" alt=""></div>';
+        echo '<div style="flex: 1;">';
+        echo '<h3>' . $data['Name'] . '</h3>';
+        echo '<h3>' . $data['Accroche'] . '</h3>';
+        echo '</div>';
+        echo '</div>';
         ?>
        </div>
     </section>
     
     <section id="apropos">
       <h1>A Propos</h1>
-      <div>
-        <image src="./assets/images/apropos.jpeg" ></image>
-        <h3> Je suis un Pokemon <br>
-        J'adore manger de l'herbe<br>
-        Vraiment mon site vous apprendras les meilleurs herbes
-        </h3>
-       </div>
+        <div>
+            <?php
+            require_once("yaml/yaml.php");
+            $data=yaml_parse_file('./assets/yaml/apropos.yaml');
+
+            echo '<div style="display: flex; align-items: center;">';
+            echo '<div style="flex: 1;"><img src="./assets/images/' . $data['Image'] . '" alt=""></div>';
+            echo '<div style="flex: 1;">';
+            echo "<h3>".$data['Accroche']."</h3>";
+            echo '<br>';
+            echo "<h3>".$data['Presentation']."</h3>";
+            echo '</div>';
+            echo '</div>';
+            ?>
+        </div>
     </section>
     
     <section id="competences">

@@ -1,0 +1,42 @@
+HTML : HTML
+starshtml:
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+CSS : CSS
+starscss:
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+PHP : PHP
+starsphp:
+  - fa fa-star
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+Cisco: Cisco
+starscisco:
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+Francais: Français
+starsfr:
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star-half-1
+Anglais: Anglais
+starsanglais:
+  - fa fa-star
+  - fa fa-star
+  - fa fa-star-half-1
+  - fa fa-star-half-1
+  - fa fa-star-half-1

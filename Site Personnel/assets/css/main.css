@@ -92,3 +92,16 @@ nav ul {
     align-items: center;
   }
 
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating span {
+    font-size: 2em;
+    color: #000;
+}
+
+.star-rating span.fa-lightblue {
+    color: #00f;
+}

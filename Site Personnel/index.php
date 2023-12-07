@@ -65,9 +65,61 @@
     
     <section id="competences">
       <h1>Compétences</h1>
-      <div>
-        
-      </div>
+        <?php
+        require_once("yaml/yaml.php");
+        $data=yaml_parse_file('./assets/yaml/competences.yaml');
+
+        echo '<div style="display: flex; align-items: center;">';
+        echo '<div style="flex: 1;"><img src="./assets/images/' . $data['Image'] . '" alt=""></div>';
+        echo '<div style="flex: 1;">';
+        echo "<h3>".$data['HTML']."</h3>";
+        echo '<div class="star-rating">';
+        echo '<div class="star-rating">';
+        foreach ($data['starshtml'] as $star) {
+            echo '<span class="' . $star . ' fa-2x fa-lightblue"></span>';
+        }
+        echo '</div>';
+        echo "<h3>".$data['CSS']."</h3>";
+        echo '<div class="star-rating">';
+        echo '<div class="star-rating">';
+        foreach ($data['starscss'] as $star) {
+            echo '<span class="' . $star . ' fa-2x fa-lightblue"></span>';
+        }
+        echo '</div>';
+        echo "<h3>".$data['PHP']."</h3>";
+        echo '<div class="star-rating">';
+        echo '<div class="star-rating">';
+        foreach ($data['starsphp'] as $star) {
+            echo '<span class="' . $star . ' fa-2x fa-lightblue"></span>';
+        }
+        echo '</div>';
+        echo "<h3>".$data['Cisco']."</h3>";
+        echo '<div class="star-rating">';
+        echo '<div class="star-rating">';
+        foreach ($data['starscisco'] as $star) {
+            echo '<span class="' . $star . ' fa-2x fa-lightblue"></span>';
+        }
+        echo '</div>';
+        echo "<h3>".$data['Francais']."</h3>";
+        echo '<div class="star-rating">';
+        echo '<div class="star-rating">';
+        foreach ($data['starsfr'] as $star) {
+            echo '<span class="' . $star . ' fa-2x fa-lightblue"></span>';
+        }
+        echo '</div>';
+        echo "<h3>".$data['Anglais']."</h3>";
+        echo '<div class="star-rating">';
+        echo '<div class="star-rating">';
+        foreach ($data['starsanglais'] as $star) {
+            echo '<span class="' . $star . ' fa-2x fa-lightblue"></span>';
+        }
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        ?>
+        </div>
     </section>
 
     <section id="experience">

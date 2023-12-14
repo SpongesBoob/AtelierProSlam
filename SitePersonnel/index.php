@@ -47,7 +47,6 @@
       <h1>A Propos</h1>
         <div>
             <?php
-            require_once("yaml/yaml.php");
             $data=yaml_parse_file('./assets/yaml/apropos.yaml');
 
             echo '<div style="display: flex; align-items: center;">';
@@ -65,7 +64,6 @@
     <section id="competences">
       <h1>Compétences</h1>
         <?php
-        require_once("yaml/yaml.php");
         $data=yaml_parse_file('./assets/yaml/competences.yaml');
 
         echo '<div style="display: flex; align-items: center;">';

@@ -30,7 +30,6 @@
       <h1>Accueil</h1>
        <div>
         <?php
-        require_once("yaml/yaml.php");
         $data = yaml_parse_file('./assets/yaml/accueil.yaml');
 
         echo '<div style="display: flex; align-items: center;">';
